@@ -1,38 +1,46 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - Meu Aplicativo ASP.NET</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="~/athena.png">
+    <title>@ViewBag.Title - Projeto Athena</title>
     @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/Site.css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar navbar-expand-sm navbar-light">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Nome do aplicativo", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Início", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Sobre", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contato", "Contact", "Home")</li>
+                <button class ="navbar-toggler" 
+                             type="button" 
+                             data-toggle="collapse" 
+                             data-target="#navbarTogglerDemo02" 
+                             aria-controls="navbarTogglerDemo02" 
+                             aria-expanded="false" 
+                             aria-label="Alterna navegação">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                <img src="~/LogoAtena2.svg" alt="Alternate Text" style=" height:36px" />
+                   
+</div>
+            <div class="navbar-collapse collapse text-lg-left">
+                <ul class="navbar-nav ">
+                    <li class="nav-item">@Html.ActionLink("Início", "Index", "Home")</li>
+                    <li class="nav-item">@Html.ActionLink("Sobre", "About", "Home")</li>
+                    <li class="nav-item">@Html.ActionLink("Contato", "Contact", "Home")</li>
                 </ul>
                 @if (User.Identity.IsAuthenticated)
                 {
                     <ul class="nav navbar-nav navbar-right dropdown">
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">@User.Identity.Name<span class="caret"></span></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">@User.Identity.Name
+                            <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li>@Html.ActionLink("Alterar senha", "AlterarSenha", "Perfil")</li>
-                                <li>@Html.ActionLink("Sair", "Logout", "Autenticacao")</li>
+                                <li class="nav-item">@Html.ActionLink("Alterar senha", "AlterarSenha", "Perfil")</li>
+                                <li class="nav-item">@Html.ActionLink("Sair", "Logout", "Autenticacao")</li>
                             </ul>
                         </li>
                     </ul>
@@ -40,19 +48,18 @@
                 else
                 {
                     <ul class="nav navbar-nav navbar-right">
-                        <li>@Html.ActionLink("Login", "Login", "Autenticacao")</li>
-                        <li>@Html.ActionLink("Cadastre-se", "Cadastrar", "Autenticacao")</li>
+                        <li class="nav-item">@Html.ActionLink("Login", "Login", "Autenticacao")</li>
+                        <li class="nav-item">@Html.ActionLink("Cadastre-se", "Cadastrar", "Autenticacao")</li>
                     </ul>
                 }
             </div>
         </div>
     </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - Meu Aplicativo ASP.NET</p>
-        </footer>
+    <div class="container-fluid body-content">
+        @RenderBody()        
+    <footer>
+        <p>&copy; @DateTime.Now.Year Athena</p>
+    </footer>
     </div>
 
     @Scripts.Render("~/bundles/jquery")

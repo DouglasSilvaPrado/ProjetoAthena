@@ -1,12 +1,28 @@
-﻿body {
-    padding-top: 50px;
+﻿/* *{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}*/
+
+a {
+    color: #fff;
+}
+
+a:hover {
+    color: #C60DE2;
+    text-decoration: none;
+}
+
+body {    
     padding-bottom: 20px;
+    background: linear-gradient(180deg, #181819 67.71%, #331859 82.11%);
+    color:white;
 }
 
 /* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+.body-content {   
+    min-height:800px;
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -16,9 +32,28 @@
     white-space: normal;
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
+.navbar {
+    display:flex;
+    background: linear-gradient(87.4deg, #C60DE2 -54.2%, rgba(51, 24, 89, 0.14) 100%);
+}
+
+.bg-jumbotron {
+    background: linear-gradient(180deg, rgba(198, 13, 226, 0.58) 0%, rgba(242, 148, 209, 0) 94.27%);
+}
+
+.video video {
+    height: 445px;
+    border: 1px solid #C60DE2;
+    border-radius: 0.5rem;
+}
+
+.btn-outline-success {
+    color: white;
+    border-color: #C60DE2;
+}
+.form-control {
+    border: 1px solid #C60DE2;
+}
+
+footer {
 }

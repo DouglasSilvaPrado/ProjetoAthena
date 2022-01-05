@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Squad55",
+    "\\Squad55\\Views",
+    "\\Squad55\\Views\\Shared"
   ],
-  "SelectedNode": "\\Squad55",
+  "SelectedNode": "\\Squad55\\Views\\Shared\\_Layout.cshtml",
   "PreviewInSolutionExplorer": false
 }
