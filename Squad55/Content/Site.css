@@ -1,9 +1,10 @@
-﻿/* *{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-}*/
+﻿*{
+    list-style:none;
+}
+.container-fluid{
+    padding-right: 0; 
+    padding-left: 0; 
+}
 
 a {
     color: #fff;
@@ -32,19 +33,32 @@ body {
     white-space: normal;
 }
 
-.navbar {
-    display:flex;
+
+.bg-nav{
     background: linear-gradient(87.4deg, #C60DE2 -54.2%, rgba(51, 24, 89, 0.14) 100%);
+
 }
 
-.bg-jumbotron {
+.jumbotron-fluid {
     background: linear-gradient(180deg, rgba(198, 13, 226, 0.58) 0%, rgba(242, 148, 209, 0) 94.27%);
+    padding:0 !important;
 }
+
 
 .video video {
-    height: 445px;
+    width:500px;
     border: 1px solid #C60DE2;
     border-radius: 0.5rem;
+}
+
+@media(max-width:575px){
+    video{
+        width:300px !important;        
+    }
+}
+
+.text-primary {
+    color: #331859 !important;
 }
 
 .btn-outline-success {
@@ -57,3 +71,4 @@ body {
 
 footer {
 }
+

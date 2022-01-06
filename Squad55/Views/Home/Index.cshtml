@@ -2,44 +2,104 @@
     ViewBag.Title = "Home Page";
 }
 
+
+
 @if (TempData["Mensagem"] != null)
 {
     <script>alert(" @TempData["Mensagem"]");</script>
 }
-<div class="jumbotron jumbotron-fluid  bg-jumbotron">
-    <div class="container d-flex p-3">
-        <div class="text-center">
-            <h1>ATHENA</h1>
+
+
+<div class="jumbotron jumbotron-fluid  ">
+    <div class="container py-5 mx-auto row row-cols-md-1 row-cols-lg-5 justify-content-center">
+        <div class="text-center col my-auto  ">
+            <h1 class="pb-3">ATHENA</h1>
             <p class="lead">O programa Athena visa ajudar menias de 11 a 17 anos de situaçoes de vunerábilidade apresendado à elas o mundo da tecnologia</p>
         </div>
-        <div class="video">
-            <video autoplay="true" muted loop>
+
+        <div class="video col">
+            <video autoplay muted loop>
                 <source src="~/indexAthena.mp4" type="video/mp4" />
                 <source src="#.webm" type="video/webm" />
                 <source src="#.ogv" type="video/ogg" />
             </video>
         </div>
+
     </div>
 </div>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+
+
+
+<div class="container ">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+        <div class="col pb-5">
+            <div class="card h-100 ">
+                <img src="~/logica.svg"
+                     class="card-img-top"
+                     alt="..." />
+                <div class="card-body text-primary">
+                    <h2 class="card-title">Introdução a logica de programação </h2>
+
+                </div>
+            </div>
+        </div>
+        <div class="col pb-5">
+            <div class="card h-100 ">
+                <img src="~/social.svg"
+                     class="card-img-top"
+                     alt="..." />
+                <div class="card-body text-primary">
+                    <h2 class="card-title">Social media</h2>
+
+                </div>
+            </div>
+        </div>
+        <div class="col pb-5">
+            <div class="card h-100 ">
+                <img src="~/games.svg"
+                     class="card-img-top"
+                     alt="..." />
+                <div class="card-body text-primary">
+                    <h2 class="card-title">Introdução a games</h2>
+
+                </div>
+            </div>
+        </div>
     </div>
 </div>
+
+<!--
+<div class="container card-deck row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 px-5 mx-auto">
+
+
+    <div class="card col px-0 ">
+        <img class="card-img-top" src="~/logica.svg" alt="Card image">
+        <div class="card-body text-primary">
+            <h4 class="card-title">John Doe</h4>
+            <p class="card-text">Some example text.</p>
+            <a href="#" class="btn btn-outline-primary">See Profile</a>
+        </div>
+    </div>
+
+    <div class="card col px-0">
+        <img class="card-img-top" src="~/social.svg" alt="Card image">
+        <div class="card-body text-primary">
+            <h4 class="card-title">John Doe</h4>
+            <p class="card-text">Some example text.</p>
+            <a href="#" class="btn btn-outline-primary">See Profile</a>
+        </div>
+    </div>
+
+    <div class="card col px-0">
+        <img class="card-img-top" src="~/games.svg" alt="Card image">
+        <div class="card-body text-primary">
+            <h4 class="card-title">John Doe</h4>
+            <p class="card-text">Some example text.</p>
+            <a href="#" class="btn btn-outline-primary">See Profile</a>
+        </div>
+    </div>
+
+</div>
+
+    -->

@@ -10,14 +10,14 @@
 {
     @Html.AntiForgeryToken()
     
-    <div class="form-horizontal text-md-center">
+    <div class="form-horizontal d-flex- flex-column align-content-center">
        
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="form-group">
             @Html.LabelFor(model => model.Nome, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Nome, new { htmlAttributes = new { @class = "form-control",placeholder ="Maria Sila" } })
+                @Html.EditorFor(model => model.Nome, new { htmlAttributes = new { @class = "form-control",placeholder ="Maria Silva" } })
                 @Html.ValidationMessageFor(model => model.Nome, "", new { @class = "text-danger" })
             </div>
         </div>
