@@ -4,46 +4,45 @@
     ViewBag.Title = "AlterarSenha";
 }
 
-<h2>AlterarSenha</h2>
 
 @using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
 
-    <div class="form-horizontal">
+    <div class="container bg-contato  my-5">
+        <h2 class="text-white display-6 text-center fw-bold my-5">
+            Alterar Senha
+        </h2>
 
-        <hr />
-        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-        <div class="form-group">
-            @Html.LabelFor(model => model.SenhaAtual, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.SenhaAtual, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.SenhaAtual, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.NovaSenha, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.NovaSenha, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.NovaSenha, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.ConfirmacaoSenha, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.ConfirmacaoSenha, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.ConfirmacaoSenha, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Salvar" class="btn btn-default" />
+        <div class="form-horizontal d-flex- flex-column align-content-center">
+                         
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <div class="form-group w-75 mx-auto">
+                @Html.LabelFor(model => model.SenhaAtual, htmlAttributes: new { @class = "control-label " })
+                <div class="">
+                    @Html.EditorFor(model => model.SenhaAtual, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.SenhaAtual, "", new { @class = "text-danger" })
+                </div>
+            
+                @Html.LabelFor(model => model.NovaSenha, htmlAttributes: new { @class = "control-label " })
+                <div class="">
+                    @Html.EditorFor(model => model.NovaSenha, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.NovaSenha, "", new { @class = "text-danger" })
+                </div>
+            
+                @Html.LabelFor(model => model.ConfirmacaoSenha, htmlAttributes: new { @class = "control-label " })
+                <div class="">
+                    @Html.EditorFor(model => model.ConfirmacaoSenha, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.ConfirmacaoSenha, "", new { @class = "text-danger" })
+                </div>
+            
+                <div class="d-flex justify-content-end">
+                    <input type="submit" value="Salvar" class="btn btn-outline-success form-control w-25 my-3" />
+                </div>
             </div>
         </div>
     </div>
+
 }
 
 @section scripts{

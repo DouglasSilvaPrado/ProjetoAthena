@@ -167,14 +167,21 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="destaqueCursos.mp4" />
     <Content Include="games.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="google.svg" />
     <Content Include="indexAthena.gif" />
     <Content Include="indexAthena.mp4" />
+    <Content Include="lg_parceiro1.svg" />
+    <Content Include="lg_parceiro2.svg" />
+    <Content Include="lg_parceiro3.svg" />
     <Content Include="logica.svg" />
     <Content Include="LogoAtena 2.svg" />
     <Content Include="LogoAtena2.svg" />
+    <Content Include="meta.svg" />
+    <Content Include="recode.svg" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -281,6 +288,7 @@
     <Content Include="Scripts\umd\popper-utils.min.js" />
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
+    <Content Include="sobreAthena.mp4" />
     <Content Include="social.svg" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -310,6 +318,7 @@
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="src.rar" />
+    <Content Include="Views\Home\Cursos.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

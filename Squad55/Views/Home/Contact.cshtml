@@ -1,17 +1,32 @@
 ﻿@{
-    ViewBag.Title = "Contact";
+    ViewBag.Title = "Contato";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
+<div class="container bg-contato  my-5"  id="contato">
+    <h2 class="text-white display-6 text-center fw-bold my-5">
+        Entre em contato
+    </h2>
+    <div>
+        <form action="https://formsubmit.co/douglassilvadaprado@gmail.com" method="POST">
+            <div class="form-group w-75 mx-auto">
+                <input type="text"
+                       class="form-control my-3"
+                       placeholder="Digite seu nome"
+                       required="" />
+                <input type="text"
+                       class="form-control my-3"
+                       placeholder="Digite seu Email"
+                       required="" />
 
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+                <textarea style="resize: none" placeholder="Digite sua Mensagem" rows="15" cols="50" name="message" required="" class="form-control my-3"></textarea>
+                <input type="hidden" name="_ captcha" value="false">
+                <input type="hidden" name="_ autoresponse" value="Mensagem enviada!">
+                <input type="hidden" name="_ next" value="index.html">
+                <div class=" d-flex justify-content-end">
+                    <button class="btn btn-outline-success form-control w-25 my-3 ">Enviar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+     

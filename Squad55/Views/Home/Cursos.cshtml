@@ -1,14 +1,6 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "Cursos";
 }
-
-
-
-@if (TempData["Mensagem"] != null)
-{
-    <script>alert(" @TempData["Mensagem"]");</script>
-}
-
 
 <div class="jumbotron jumbotron-fluid  ">
     <div class="container py-5 mx-auto row row-cols-md-1 row-cols-lg-5 justify-content-center">
@@ -19,7 +11,7 @@
 
         <div class="video col">
             <video autoplay muted loop>
-                <source src="~/indexAthena.mp4" type="video/mp4" />
+                <source src="~/destaqueCursos.mp4" type="video/mp4" />
                 <source src="#.webm" type="video/webm" />
                 <source src="#.ogv" type="video/ogg" />
             </video>
@@ -63,54 +55,40 @@
                 </div>
             </div>
         </div>
-    </div>
-</div>
-
-<div class="container text-center mt-5">
-
-
-    <h2 class="p-5">Parceiros</h2>
-
-
-</div>
-
-<div class="container my-5 ">
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
         <div class="col pb-5">
-            <div class="card h-100 " style="background:none; border:none">
-                <img src="~/lg_parceiro1.svg" 
+            <div class="card h-100 ">
+                <img src="~/logica.svg"
                      class="card-img-top"
                      alt="..." />
+                <div class="card-body text-primary">
+                    <h2 class="card-title">Introdução a logica de programação </h2>
 
+                </div>
             </div>
         </div>
         <div class="col pb-5">
-            <div class="card h-100 " style="background:none; border:none">
-                <img src="~/lg_parceiro2.svg"
+            <div class="card h-100 ">
+                <img src="~/social.svg"
                      class="card-img-top"
                      alt="..." />
+                <div class="card-body text-primary">
+                    <h2 class="card-title">Social media</h2>
 
+                </div>
             </div>
         </div>
         <div class="col pb-5">
-            <div class="card h-100 " style="background:none; border:none">
-                <img src="~/lg_parceiro3.svg"
+            <div class="card h-100 ">
+                <img src="~/games.svg"
                      class="card-img-top"
                      alt="..." />
-                
+                <div class="card-body text-primary">
+                    <h2 class="card-title">Introdução a games</h2>
+
+                </div>
             </div>
         </div>
     </div>
 </div>
-<!--
-<div class="card h-100" style="border: none">
-            <img
-              src="Ellipse 1.png"
-              class="card-img-top"
-              alt="..."
-              style="border-radius: 50%; background-image: cover"
-            />
-            <div class="card-body">
-              <h2 class="card-title text-center">Tóquio</h2>
-            </div>
--->
+
+
