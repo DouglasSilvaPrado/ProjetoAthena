@@ -6,6 +6,10 @@
     padding-left: 0; 
 }
 
+h1, h2, h3{
+    font-size:1.3rem;
+}
+
 a {
     color: #fff;
 }
@@ -23,6 +27,7 @@ body {
 
 /* Set padding to keep content from hitting the edges */
 .body-content {   
+    font-size: 1.25rem;
     min-height:800px;
 }
 
@@ -57,15 +62,23 @@ body {
     }
 }
 
+.card {
+    border: 1px solid #C60DE2;
+}
+
 @media(max-width:768px) {
     .linear {
         display: none;
     }
 
     .text {
-        height:30rem;
+        
         background: url("..//athena.png");
         background-size: cover;
+    }
+
+    .container-text{
+        
     }
 }
 
@@ -85,10 +98,12 @@ footer {
 }
 
 .tracer {
-    width: 50px;
-    height: 2px;
+    width: 33rem;
+    height: .1rem;
+    border-radius:.1rem;
     background-color: #C60DE2;
 }
+
 
 .bg-contato {
     background: linear-gradient(179.55deg, rgba(149, 88, 166, 0.59) 0.39%, rgba(149, 88, 166, 0.438202) 42.25%, rgba(149, 88, 166, 0) 99.61%);
@@ -106,7 +121,15 @@ footer {
 
 .text {
     height: 34.375rem;
-    margin-top: auto;
-    margin-bottom: auto;
+    
     /* background: linear-gradient(269.74deg, rgba(149, 88, 166, 0.59) 0.19%, rgba(149, 88, 166, 0.438202) 51.98%, rgba(149, 88, 166, 0) 98.71%);*/
+}
+
+.integrantes{
+    max-height:5rem;
+}
+
+.dropdown-menu {
+    min-width:7rem;
+    max-width: 7rem;
 }

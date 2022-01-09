@@ -4,8 +4,9 @@
     "\\Squad55",
     "\\Squad55\\Content",
     "\\Squad55\\Views",
+    "\\Squad55\\Views\\Home",
     "\\Squad55\\Views\\Shared"
   ],
-  "SelectedNode": "\\Squad55\\Content\\Site.css",
+  "SelectedNode": "\\Squad55\\Views\\Home\\Index.cshtml",
   "PreviewInSolutionExplorer": false
 }

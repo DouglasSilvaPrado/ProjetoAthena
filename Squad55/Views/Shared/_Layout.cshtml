@@ -12,7 +12,7 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-nav">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/">
             <img src="~/LogoAtena2.svg" alt="Alternate Text" />
         </a>
         <button class="navbar-toggler"
@@ -42,7 +42,7 @@
                             @User.Identity.Name
                             <span class="caret"></span>
                         </a>
-                        <ul class="dropdown-menu bg-contato p-2">
+                        <ul class="dropdown-menu bg-contato p-2 pr-0">
                             <li class="nav-item">@Html.ActionLink("Alterar senha", "AlterarSenha", "Perfil")</li>
                             <li class="nav-item">@Html.ActionLink("Sair", "Logout", "Autenticacao")</li>
                         </ul>
@@ -62,9 +62,9 @@
     <div class="container-fluid body-content">
         @RenderBody()
         <footer class="pt-5 mt-5">
-            <div class="container text-center ">
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 text-center ">
-                    <div class="imput col">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2  ">
+                    <div class="imput col ">
                         <h2>Sejá uma pareceiro</h2>
                         <form action="https://formsubmit.co/douglassilvadaprado@gmail.com" method="POST">
                             <div class="form-group mx-auto">
@@ -77,7 +77,7 @@
                                        placeholder="Digite seu Email"
                                        required="" />
 
-                                <textarea style="resize: none" placeholder="Digite sua Mensagem" rows="4" cols="50" name="message" required="" class="form-control my-3"></textarea>
+                                <textarea style="resize: none" placeholder="Digite sua Mensagem" rows="3" cols="50" name="message" required="" class="form-control my-3"></textarea>
                                 <input type="hidden" name="_ captcha" value="false">
                                 <input type="hidden" name="_ autoresponse" value="Mensagem enviada!">
                                 <input type="hidden" name="_ next" value="index.html">
@@ -85,37 +85,42 @@
                             </div>
                         </form>
                     </div>
-                    <div class="link col ">
-                        <h3 class=" ">Menu</h3>
-                        <ul class="mx-0 px-0">
-                            <li class="py-2">@Html.ActionLink("Início", "Index", "Home")</li>
-                            <li class="py-2">@Html.ActionLink("Cursos", "Cursos", "Home")</li>
-                            <li class="py-2">@Html.ActionLink("Sobre", "About", "Home")</li>
-                            <li class="py-2">@Html.ActionLink("Contato", "Contact", "Home")</li>
-                        </ul>
-                    </div>
-                    <div class="rede col">
-                        <h3 class="">Redes Sociais</h3>
-                        <ul class="mx-0 px-0 ">
-                            <li class="py-2">
-                                <a href="#">
-                                    <i class="bi bi-facebook"></i>
-                                    FaceBook
-                                </a>
-                            </li>
-                            <li class="py-2">
-                                <a href="#">
-                                    <i class="bi bi-instagram"></i>
-                                    Instagram
-                                </a>
-                            </li>
-                            <li class="py-2">
-                                <a href="#">
-                                    <i class="bi bi-twitter"></i>
-                                    Twitter
-                                </a>
-                            </li>
-                        </ul>
+
+                    <div class="row row-cols-sm-2 justify-content-between ">
+                        <div class="link col d-flex flex-column align-items-center ">
+                            <h3 class="mb-4 pl-3 ">Menu</h3>
+                            <ul class="mx-0 px-0">
+                                <li class="py-2">@Html.ActionLink("Início", "Index", "Home")</li>
+                                <li class="py-2">@Html.ActionLink("Cursos", "Cursos", "Home")</li>
+                                <li class="py-2">@Html.ActionLink("Sobre", "About", "Home")</li>
+                                <li class="py-2">@Html.ActionLink("Contato", "Contact", "Home")</li>
+                            </ul>
+                        </div>
+
+                        <div class="rede col">
+                            <h3 class="mb-4">Redes Sociais</h3>
+                            <ul class="mx-0 px-0 ">
+                                <li class="py-2">
+                                    <a href="#">
+                                        <i class="bi bi-facebook pr-2"></i>
+                                        FaceBook
+                                    </a>
+                                </li>
+                                <li class="py-2">
+                                    <a href="#">
+                                        <i class="bi bi-instagram pr-2"></i>
+                                        Instagram
+                                    </a>
+                                </li>
+                                <li class="py-2">
+                                    <a href="#">
+                                        <i class="bi bi-twitter pr-2"></i>
+                                        Twitter
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
                     </div>
                 </div>
             </div>
