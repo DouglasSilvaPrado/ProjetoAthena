@@ -161,6 +161,9 @@
     <Compile Include="ViewModels\LoginViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="10.svg" />
+    <Content Include="8.svg" />
+    <Content Include="9.svg" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-reboot.css" />
@@ -173,6 +176,9 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="google.svg" />
+    <Content Include="img_douglas.svg" />
+    <Content Include="img_guilherme.svg" />
+    <Content Include="img_manuel.svg" />
     <Content Include="indexAthena.gif" />
     <Content Include="indexAthena.mp4" />
     <Content Include="lg_parceiro1.svg" />

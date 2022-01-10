@@ -1,13 +1,14 @@
 ﻿*{
     list-style:none;
 }
+
+.row{
+    padding-left:0;
+}
+
 .container-fluid{
     padding-right: 0; 
     padding-left: 0; 
-}
-
-h1, h2, h3{
-    font-size:1.3rem;
 }
 
 a {
@@ -57,8 +58,8 @@ body {
 }
 
 @media(max-width:575px){
-    video{
-        width:300px !important;        
+    video {
+        width: 265px !important;
     }
 }
 
@@ -67,18 +68,16 @@ body {
 }
 
 @media(max-width:768px) {
-    .linear {
+    .missao, .visao, .valor {
         display: none;
     }
 
-    .text {
-        
-        background: url("..//athena.png");
-        background-size: cover;
+    .texto {
+        background: linear-gradient(269.74deg, rgba(149, 88, 166, 0.59) 0.19%, rgba(149, 88, 166, 0.438202) 51.98%, rgba(149, 88, 166, 0) 98.71%);
     }
 
-    .container-text{
-        
+    .texto-l {
+        background: linear-gradient(89.88deg, rgba(149, 88, 166, 0.59) 0.11%, rgba(149, 88, 166, 0.438202) 52.01%, rgba(149, 88, 166, 0) 98.86%);
     }
 }
 
@@ -90,12 +89,11 @@ body {
     color: white;
     border-color: #C60DE2;
 }
+
 .form-control {
     border: 1px solid #C60DE2;
 }
 
-footer {
-}
 
 .tracer {
     width: 33rem;
@@ -104,7 +102,6 @@ footer {
     background-color: #C60DE2;
 }
 
-
 .bg-contato {
     background: linear-gradient(179.55deg, rgba(149, 88, 166, 0.59) 0.39%, rgba(149, 88, 166, 0.438202) 42.25%, rgba(149, 88, 166, 0) 99.61%);
     border: 1px solid #C60DE2;
@@ -112,21 +109,24 @@ footer {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.linear {
+.missao, .visao, .valor {
     width: 50%;
     height: 34.375rem;
-    background: url("..//athena.png");
+}
+
+.missao{
+    background: url("..//8.svg");
     background-size: cover;
 }
 
-.text {
-    height: 34.375rem;
-    
-    /* background: linear-gradient(269.74deg, rgba(149, 88, 166, 0.59) 0.19%, rgba(149, 88, 166, 0.438202) 51.98%, rgba(149, 88, 166, 0) 98.71%);*/
+.visao {
+    background: url("..//9.svg");
+    background-size: cover;
 }
 
-.integrantes{
-    max-height:5rem;
+.valor {
+    background: url("..//10.svg");
+    background-size: cover;
 }
 
 .dropdown-menu {
