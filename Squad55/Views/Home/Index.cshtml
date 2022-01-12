@@ -2,34 +2,116 @@
     ViewBag.Title = "Home Page";
 }
 
+
+
 @if (TempData["Mensagem"] != null)
 {
     <script>alert(" @TempData["Mensagem"]");</script>
 }
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+
+
+<div class="jumbotron jumbotron-fluid  ">
+    <div class="container py-5 w-75 mx-auto row row-cols-1 row-cols-md-1 row-cols-lg-2 justify-content-center">
+        <div class=" col my-auto  ">
+            <h1 class="pb-3">ATHENA</h1>
+            <p class="lead">O programa Athena visa ajudar meninas de 11 a 17 anos de situaçoes de vunerábilidade apresendado à elas o mundo da tecnologia</p>
+        </div>
+
+        <div class="video col">
+            <video autoplay muted loop>
+                <source src="~/indexAthena.mp4" type="video/mp4" />
+                <source src="#.webm" type="video/webm" />
+                <source src="#.ogv" type="video/ogg" />
+            </video>
+        </div>
+
+    </div>
 </div>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+<div class="container w-75 mx-auto">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+        <div class="col pb-5">
+            <div class="card h-100 ">
+                <img src="~/logica.svg"
+                     class="card-img-top"
+                     alt="..." />
+                <div class="card-body text-primary">
+                    <h3 class="card-title">Introdução a logica de programação </h3>
+
+                </div>
+            </div>
+        </div>
+        <div class="col pb-5">
+            <div class="card h-100 ">
+                <img src="~/social.svg"
+                     class="card-img-top"
+                     alt="..." />
+                <div class="card-body text-primary">
+                    <h3 class="card-title">Social media</h3>
+
+                </div>
+            </div>
+        </div>
+        <div class="col pb-5">
+            <div class="card h-100 ">
+                <img src="~/games.svg"
+                     class="card-img-top"
+                     alt="..." />
+                <div class="card-body text-primary">
+                    <h3 class="card-title">Introdução a games</h3>
+
+                </div>
+            </div>
+        </div>
     </div>
 </div>
+
+<div class="container d-flex align-items-center justify-content-around mt-5">
+
+    <div class="tracer"></div>
+    <h2 class="p-5">Parceiros</h2>
+    <div class="tracer"></div>
+
+
+</div>
+
+<div class="container my-5 w-50">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+        <div class="col pb-5">
+            <div class="card h-100 " style="background:none; border:none">
+                <img src="~/lg_parceiro1.svg" 
+                     class="card-img-top"
+                     alt="..." />
+
+            </div>
+        </div>
+        <div class="col pb-5">
+            <div class="card h-100 " style="background:none; border:none">
+                <img src="~/lg_parceiro2.svg"
+                     class="card-img-top"
+                     alt="..." />
+
+            </div>
+        </div>
+        <div class="col pb-5">
+            <div class="card h-100 " style="background:none; border:none">
+                <img src="~/lg_parceiro3.svg"
+                     class="card-img-top"
+                     alt="..." />
+                
+            </div>
+        </div>
+    </div>
+</div>
+<!--
+<div class="card h-100" style="border: none">
+            <img
+              src="Ellipse 1.png"
+              class="card-img-top"
+              alt="..."
+              style="border-radius: 50%; background-image: cover"
+            />
+            <div class="card-body">
+              <h2 class="card-title text-center">Tóquio</h2>
+            </div>
+-->

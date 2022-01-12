@@ -15,7 +15,13 @@ namespace Squad55.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            
+            return View();
+        }
+
+        public ActionResult Cursos()
+        {
+           
 
             return View();
         }
