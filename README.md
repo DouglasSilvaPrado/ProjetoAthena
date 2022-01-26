@@ -1,6 +1,19 @@
 <h1>Projeto Athena</h1>
 
 <h2>Sobre Athena</h2>
+<p>
+  O Projeto Athena nasceu em 2021, fundada por alunos da RecodePro, ao longo do curso desenvolvedor Full Stack.
+
+Durante esses seis meses de história, nosso maior compromisso sempre foi com empoderar mulher 11 a 17 anos. Foi com o apoio da Recode que nos desenvolvemos a vontade de mudar o mundo a nossa volta.
+
+Nós acreditamos na igualdade de gênero e que as mulheres são capazes ocupar posições em qualquer área de tecnologia. Por isso, desenvolvemos soluções digitais para aguçar a curiosidade delas no mundo da tecnologia com projetos lúdicos e acessíveis.
+
+Atualmente, somos três alunos. Juntos, acumulamos a experiência em projetos de Tecnologia.
+
+Nosso time atua em métodos de trabalho adequados a cada desafio.
+
+Nós habilitamos nossas alunas a superarem os maiores desafios da era digital, através da tecnologia e da eficiência.
+</p>
 <h3>Pretendemos enfrentar</h3>
 <ul>
   <li>O baixo numero de mulheres ocupando cargos no mercado de tecnologia</li>
