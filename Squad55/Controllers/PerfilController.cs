@@ -27,7 +27,7 @@ namespace Squad55.Controllers
                 return View();
             }
 
-            var identity = User.Identity as ClaimsIdentity;
+            var identity = User.Identity as ClaimsIdentity ;
             var login = identity.Claims.FirstOrDefault(c=> c.Type =="Login").Value;
 
             var usuario = db.Usuarios.FirstOrDefault(u=> u.Login==login);

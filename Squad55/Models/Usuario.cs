@@ -10,7 +10,7 @@ namespace Squad55.Models
     [Table("Usuarios")]
     public class Usuario
     {
-        public int Id { get; set; }
+        public int Id { get; set;}
         [Required]
         [MaxLength(100)]
         public string Nome { get; set; }

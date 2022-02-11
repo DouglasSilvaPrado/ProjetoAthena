@@ -16,7 +16,7 @@ namespace Squad55.Controllers
         public ActionResult About()
         {
             
-            return View();
+            return View() ;
         }
 
         public ActionResult Cursos()

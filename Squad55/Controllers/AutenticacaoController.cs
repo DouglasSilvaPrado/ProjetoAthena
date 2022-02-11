@@ -83,7 +83,7 @@ namespace Squad55.Controllers
 
             if (!String.IsNullOrWhiteSpace(viewmodel.UrlRetorno) || Url.IsLocalUrl(viewmodel.UrlRetorno))
             {
-                return Redirect(viewmodel.UrlRetorno);
+                return Redirect(viewmodel.UrlRetorno) ;
             }
             else {
                 return RedirectToAction("Index","Home");

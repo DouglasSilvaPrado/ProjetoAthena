@@ -11,7 +11,7 @@ namespace Squad55.Controllers
        [Authorize]
         public ActionResult Index()
         {
-            return View();
+            return View() ;
         }
 
         [Authorize]

@@ -13,6 +13,6 @@ namespace Squad55.Models
 
         }
 
-        public DbSet<Usuario> Usuarios { get; set; }
+        public DbSet<Usuario> Usuarios { get; set;}
     }
 }

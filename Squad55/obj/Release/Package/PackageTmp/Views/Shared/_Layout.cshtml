@@ -26,14 +26,14 @@
         </button>
 
         <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
-            <div class="navbar-nav mr-auto">
+            <ul class="navbar-nav mr-auto">
                 <ul class="navbar-nav ">
                     <li class="nav-item nav-link">@Html.ActionLink("Início", "Index", "Home")</li>
                     <li class="nav-item nav-link">@Html.ActionLink("Cursos", "Cursos", "Home")</li>
                     <li class="nav-item nav-link">@Html.ActionLink("Sobre", "About", "Home")</li>
                     <li class="nav-item nav-link">@Html.ActionLink("Contato", "Contact", "Home")</li>
                 </ul>
-            </div>
+            </ul>
             @if (User.Identity.IsAuthenticated)
             {
                 <ul class="nav navbar-nav navbar-right dropdown pr-5">
@@ -123,7 +123,7 @@
                     </div>
                 </div>
                     <center style="font-size:16px; color: rgba(0,0,0,0.3)">
-                        Imagens e cursos são meramente ilutrativas. Site feito para fiz educativos.
+                        Imagens e cursos meramente ilutrativos. Site feito para fiz educativos
                     </center>
             </div>
         </footer>
