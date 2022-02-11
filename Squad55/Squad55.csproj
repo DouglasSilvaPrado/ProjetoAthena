@@ -327,6 +327,7 @@
     <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="src.rar" />
     <Content Include="Views\Home\Cursos.cshtml" />
+    <Content Include="Views\Home\CursoMarketingDigital.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
