@@ -145,6 +145,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AutenticacaoController.cs" />
+    <Compile Include="Controllers\CursosController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PainelController.cs" />
     <Compile Include="Controllers\PerfilController.cs" />
@@ -327,7 +328,7 @@
     <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="src.rar" />
     <Content Include="Views\Home\Cursos.cshtml" />
-    <Content Include="Views\Home\CursoMarketingDigital.cshtml" />
+    <Content Include="Views\Cursos\CursoMarketingDigital.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
