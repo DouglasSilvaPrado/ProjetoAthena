@@ -333,6 +333,7 @@
     <Content Include="Views\Cursos\CursoMarketingDigital.cshtml" />
     <Content Include="Views\Cursos\CursoSocialMedia.cshtml" />
     <Content Include="Views\Cursos\CursoLogicaProgramacao.cshtml" />
+    <Content Include="Views\Cursos\CursoGitEGitHub.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
