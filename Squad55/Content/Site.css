@@ -50,6 +50,10 @@ body {
     padding:0 !important;
 }
 
+.bg-gradient {
+    background: linear-gradient(180deg, rgba(198, 13, 226, 0.58) 0%, rgba(242, 148, 209, 0) 94.27%);
+}
+
 
 .video video {
     width:500px;
@@ -132,4 +136,12 @@ body {
 .dropdown-menu {
     min-width:7rem;
     max-width: 7rem;
+}
+
+.logo-curso {
+    max-height: 400px;
+}
+
+.links {
+    color: #C60DE2 !important;
 }

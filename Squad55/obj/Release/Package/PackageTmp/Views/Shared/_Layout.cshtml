@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="~/athena.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <title>@ViewBag.Title - Projeto Athena</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-nav">
+        <a class="navbar-brand" href="/">
+            <img src="~/LogoAtena2.svg" alt="Alternate Text" />
+        </a>
+        <button class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#conteudoNavbarSuportado"
+                aria-controls="conteudoNavbarSuportado"
+                aria-expanded="false"
+                aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+            <ul class="navbar-nav mr-auto">
+                <ul class="navbar-nav ">
+                    <li class="nav-item nav-link">@Html.ActionLink("Início", "Index", "Home")</li>
+                    <li class="nav-item nav-link">@Html.ActionLink("Cursos", "Cursos", "Home")</li>
+                    <li class="nav-item nav-link">@Html.ActionLink("Sobre", "About", "Home")</li>
+                    <li class="nav-item nav-link">@Html.ActionLink("Contato", "Contact", "Home")</li>
+                </ul>
+            </ul>
+            @if (User.Identity.IsAuthenticated)
+            {
+                <ul class="nav navbar-nav navbar-right dropdown pr-5">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            @User.Identity.Name
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu bg-contato p-2 pr-0">
+                            <li class="nav-item">@Html.ActionLink("Alterar senha", "AlterarSenha", "Perfil")</li>
+                            <li class="nav-item">@Html.ActionLink("Sair", "Logout", "Autenticacao")</li>
+                        </ul>
+                    </li>
+                </ul>
+            }
+            else
+            {
+                <ul class="nav navbar-nav navbar-right pr-5">
+                    <li class="nav-item nav-link">@Html.ActionLink("Login", "Login", "Autenticacao")</li>
+                    <li class="nav-item nav-link">@Html.ActionLink("Cadastre-se", "Cadastrar", "Autenticacao")</li>
+                </ul>
+            }
+        </div>
+    </nav>
+
+    <div class="container-fluid body-content">
+        @RenderBody()
+        <footer class="pt-5 mt-5">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2  ">
+                    <div class="imput col ">
+                        <h2>Apoie o projeto</h2>
+                        <form action="https://formsubmit.co/douglassilvadaprado@gmail.com" method="POST">
+                            <div class="form-group mx-auto">
+                                <input type="text"
+                                       class="form-control my-3"
+                                       placeholder="Digite seu nome"
+                                       required="" />
+                                <input type="text"
+                                       class="form-control my-3"
+                                       placeholder="Digite seu Email"
+                                       required="" />
+
+                                <textarea style="resize: none" placeholder="Digite sua Mensagem" rows="3" cols="50" name="message" required="" class="form-control my-3"></textarea>
+                                <input type="hidden" name="_ captcha" value="false">
+                                <input type="hidden" name="_ autoresponse" value="Mensagem enviada!">
+                                <input type="hidden" name="_ next" value="index.html">
+                                <button class="btn btn-outline-success form-control my-3">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="row row-cols-sm-2 justify-content-between ">
+                        <div class="link col d-flex flex-column align-items-center ">
+                            <h3 class="mb-4 ">Menu</h3>
+                            <ul class="mx-0 px-0">
+                                <li class="py-2">@Html.ActionLink("Início", "Index", "Home")</li>
+                                <li class="py-2">@Html.ActionLink("Cursos", "Cursos", "Home")</li>
+                                <li class="py-2">@Html.ActionLink("Sobre", "About", "Home")</li>
+                                <li class="py-2">@Html.ActionLink("Contato", "Contact", "Home")</li>
+                            </ul>
+                        </div>
+
+                        <div class="rede col">
+                            <h3 class="mb-4">Redes Sociais</h3>
+                            <ul class="mx-0 px-0 ">
+                                <li class="py-2">
+                                    <a href="#">
+                                        <i class="bi bi-facebook pr-2"></i>
+                                        FaceBook
+                                    </a>
+                                </li>
+                                <li class="py-2">
+                                    <a href="#">
+                                        <i class="bi bi-instagram pr-2"></i>
+                                        Instagram
+                                    </a>
+                                </li>
+                                <li class="py-2">
+                                    <a href="#">
+                                        <i class="bi bi-twitter pr-2"></i>
+                                        Twitter
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    <script>(function (d) { var s = d.createElement("script"); s.setAttribute("data-account", "IaXY5bUoSX"); s.setAttribute("src", "https://cdn.userway.org/widget.js"); (d.body || d.head).appendChild(s); })(document)</script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

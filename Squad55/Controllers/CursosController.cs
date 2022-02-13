@@ -7,15 +7,21 @@ using System.Web.Mvc;
 namespace Squad55.Controllers
 {
     public class CursosController : Controller
-    {
-       
-
+    {      
         public ActionResult CursoMarketingDigital()
         {
-
             return View();
         }
 
-       
+        public ActionResult CursoSocialMedia()
+        {
+            return View();
+        }
+
+        public ActionResult CursoLogicaProgramacao()
+        {
+            return View();
+        }
+
     }
 }
