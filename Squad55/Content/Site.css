@@ -13,6 +13,7 @@
 
 a {
     color: #fff;
+   
 }
 
 a:hover {
@@ -51,24 +52,32 @@ body {
 }
 
 
-.video video {
-    width:500px;
+video,
+.img-curso {
+    width: 500px;
     border: 1px solid #C60DE2;
     border-radius: 0.5rem;
 }
 
-@media(max-width:575px){
-    video {
+@media(max-width:575px) {
+    video,
+    .img-curso {
         width: 265px !important;
     }
+
+   
 }
+
+
 
 .card {
     border: 1px solid #C60DE2;
 }
 
 @media(max-width:768px) {
-    .missao, .visao, .valor {
+    .missao, 
+    .visao, 
+    .valor {
         display: none;
     }
 
@@ -79,6 +88,7 @@ body {
     .texto-l {
         background: linear-gradient(89.88deg, rgba(149, 88, 166, 0.59) 0.11%, rgba(149, 88, 166, 0.438202) 52.01%, rgba(149, 88, 166, 0) 98.86%);
     }
+
 }
 
 .text-primary {
@@ -109,7 +119,9 @@ body {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.missao, .visao, .valor {
+.missao, 
+.visao, 
+.valor {
     width: 50%;
     height: 34.375rem;
 }
