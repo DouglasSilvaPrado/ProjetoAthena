@@ -1,0 +1,135 @@
+﻿*{
+    list-style:none;
+}
+
+.row{
+    padding-left:0;
+}
+
+.container-fluid{
+    padding-right: 0; 
+    padding-left: 0; 
+}
+
+a {
+    color: #fff;
+}
+
+a:hover {
+    color: #C60DE2;
+    text-decoration: none;
+}
+
+body {    
+    padding-bottom: 20px;
+    background: linear-gradient(180deg, #181819 67.71%, #331859 82.11%);
+    color:white;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {   
+    font-size: 1.25rem;
+    min-height:800px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+
+.bg-nav{
+    background: linear-gradient(87.4deg, #C60DE2 -54.2%, rgba(51, 24, 89, 0.14) 100%);
+
+}
+
+.jumbotron-fluid {
+    background: linear-gradient(180deg, rgba(198, 13, 226, 0.58) 0%, rgba(242, 148, 209, 0) 94.27%);
+    padding:0 !important;
+}
+
+
+.video video {
+    width:500px;
+    border: 1px solid #C60DE2;
+    border-radius: 0.5rem;
+}
+
+@media(max-width:575px){
+    video {
+        width: 265px !important;
+    }
+}
+
+.card {
+    border: 1px solid #C60DE2;
+}
+
+@media(max-width:768px) {
+    .missao, .visao, .valor {
+        display: none;
+    }
+
+    .texto {
+        background: linear-gradient(269.74deg, rgba(149, 88, 166, 0.59) 0.19%, rgba(149, 88, 166, 0.438202) 51.98%, rgba(149, 88, 166, 0) 98.71%);
+    }
+
+    .texto-l {
+        background: linear-gradient(89.88deg, rgba(149, 88, 166, 0.59) 0.11%, rgba(149, 88, 166, 0.438202) 52.01%, rgba(149, 88, 166, 0) 98.86%);
+    }
+}
+
+.text-primary {
+    color: #331859 !important;
+}
+
+.btn-outline-success {
+    color: white;
+    border-color: #C60DE2;
+}
+
+.form-control {
+    border: 1px solid #C60DE2;
+}
+
+
+.tracer {
+    width: 33rem;
+    height: .1rem;
+    border-radius:.1rem;
+    background-color: #C60DE2;
+}
+
+.bg-contato {
+    background: linear-gradient(179.55deg, rgba(149, 88, 166, 0.59) 0.39%, rgba(149, 88, 166, 0.438202) 42.25%, rgba(149, 88, 166, 0) 99.61%);
+    border: 1px solid #C60DE2;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.missao, .visao, .valor {
+    width: 50%;
+    height: 34.375rem;
+}
+
+.missao{
+    background: url("..//8.svg");
+    background-size: cover;
+}
+
+.visao {
+    background: url("..//9.svg");
+    background-size: cover;
+}
+
+.valor {
+    background: url("..//10.svg");
+    background-size: cover;
+}
+
+.dropdown-menu {
+    min-width:7rem;
+    max-width: 7rem;
+}

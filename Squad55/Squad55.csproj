@@ -214,6 +214,8 @@
     <Content Include="Content\bootstrap-reboot.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
+    <None Include="Properties\PublishProfiles\athenateste - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\athenateste - Web Deploy1.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -329,6 +331,7 @@
     <Content Include="src.rar" />
     <Content Include="Views\Home\Cursos.cshtml" />
     <Content Include="Views\Cursos\CursoMarketingDigital.cshtml" />
+    <Content Include="Views\Cursos\CursoSocialMedia.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

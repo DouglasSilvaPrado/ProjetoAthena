@@ -1,0 +1,53 @@
+﻿@model Squad55.ViewModels.LoginViewModel
+
+@{
+    ViewBag.Title = "Login";
+}
+
+
+@if (TempData["Mensagem"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["Mensagem"]
+    </div>
+}
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+<div class="container bg-contato my-5">
+    <h2 class="display-6 text-center fw-bold my-5">
+        Entrar
+    </h2>
+    <div class="form-horizontal">
+
+        
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(Model => Model.UrlRetorno)
+        <div class="form-group w-75 mx-auto ">
+            
+            <div class="py-3">
+                @Html.EditorFor(model => model.Login, new { htmlAttributes = new { @class = "form-control", placeholder = "Email" }})
+                @Html.ValidationMessageFor(model => model.Login, "", new { @class = "text-danger" })
+            </div>
+        
+            
+            <div class="">
+                @Html.EditorFor(model => model.Senha, new { htmlAttributes = new { @class = "form-control", placeholder = "Senha" } })
+                @Html.ValidationMessageFor(model => model.Senha, "", new { @class = "text-danger" })
+            </div>
+        
+            <div class="d-flex justify-content-end py-5">
+                <input type="submit" value="Entrar" class="btn btn-outline-success form-control w-25 my-3 " />
+            </div>
+        </div>
+    </div>
+</div>
+        }
+
+        @section scripts{
+            <script src="~/Scripts/jquery.validate.min.js"></script>
+            <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+        }
+
