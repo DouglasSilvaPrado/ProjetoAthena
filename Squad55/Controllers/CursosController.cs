@@ -27,5 +27,15 @@ namespace Squad55.Controllers
         {
             return View();
         }
+
+        public ActionResult CursoPixelArt()
+        {
+            return View();
+        }
+
+        public ActionResult CursoGames()
+        {
+            return View();
+        }
     }
 }
