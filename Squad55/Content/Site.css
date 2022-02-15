@@ -55,14 +55,14 @@ body {
 }
 
 
-.video video {
+.juboteom-video {
     width:500px;
     border: 1px solid #C60DE2;
     border-radius: 0.5rem;
 }
 
 @media(max-width:575px){
-    video {
+    .juboteom-video {
         width: 265px !important;
     }
 }
