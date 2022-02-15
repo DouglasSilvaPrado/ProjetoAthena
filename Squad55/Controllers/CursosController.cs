@@ -18,15 +18,14 @@ namespace Squad55.Controllers
             return View();
         }
 
-          public ActionResult CursoPixelArt()
-        {
-            return View();
-        }
-    
-          public ActionResult CursoGames()
+        public ActionResult CursoLogicaProgramacao()
         {
             return View();
         }
 
+        public ActionResult CursoGitEGitHub()
+        {
+            return View();
+        }
     }
 }

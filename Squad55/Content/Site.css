@@ -13,7 +13,6 @@
 
 a {
     color: #fff;
-   
 }
 
 a:hover {
@@ -51,33 +50,29 @@ body {
     padding:0 !important;
 }
 
+.bg-gradient {
+    background: linear-gradient(180deg, rgba(198, 13, 226, 0.58) 0%, rgba(242, 148, 209, 0) 94.27%);
+}
 
-video,
-.img-curso {
-    width: 500px;
+
+.video video {
+    width:500px;
     border: 1px solid #C60DE2;
     border-radius: 0.5rem;
 }
 
-@media(max-width:575px) {
-    video,
-    .img-curso {
+@media(max-width:575px){
+    video {
         width: 265px !important;
     }
-
-   
 }
-
-
 
 .card {
     border: 1px solid #C60DE2;
 }
 
 @media(max-width:768px) {
-    .missao, 
-    .visao, 
-    .valor {
+    .missao, .visao, .valor {
         display: none;
     }
 
@@ -88,7 +83,6 @@ video,
     .texto-l {
         background: linear-gradient(89.88deg, rgba(149, 88, 166, 0.59) 0.11%, rgba(149, 88, 166, 0.438202) 52.01%, rgba(149, 88, 166, 0) 98.86%);
     }
-
 }
 
 .text-primary {
@@ -119,9 +113,7 @@ video,
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.missao, 
-.visao, 
-.valor {
+.missao, .visao, .valor {
     width: 50%;
     height: 34.375rem;
 }
@@ -144,4 +136,12 @@ video,
 .dropdown-menu {
     min-width:7rem;
     max-width: 7rem;
+}
+
+.logo-curso {
+    max-height: 400px;
+}
+
+.links {
+    color: #C60DE2 !important;
 }
