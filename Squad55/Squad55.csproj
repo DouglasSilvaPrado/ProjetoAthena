@@ -330,7 +330,11 @@
     <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="src.rar" />
     <Content Include="Views\Home\Cursos.cshtml" />
+    <Content Include="Views\Cursos\CursoGames.cshtml" />
+    <Content Include="Views\Cursos\CursoGitEGitHub.cshtml" />
+    <Content Include="Views\Cursos\CursoLogicaProgramacao.cshtml" />
     <Content Include="Views\Cursos\CursoMarketingDigital.cshtml" />
+    <Content Include="Views\Cursos\CursoPixelArt.cshtml" />
     <Content Include="Views\Cursos\CursoSocialMedia.cshtml" />
   </ItemGroup>
   <ItemGroup>
