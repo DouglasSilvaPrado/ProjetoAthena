@@ -23,5 +23,9 @@ namespace Squad55.Controllers
             return View();
         }
 
+        public ActionResult CursoGitEGitHub()
+        {
+            return View();
+        }
     }
 }
