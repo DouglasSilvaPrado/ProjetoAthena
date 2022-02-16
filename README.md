@@ -39,13 +39,23 @@ Nós habilitamos nossas alunas a superarem os maiores desafios da era digital, a
 https://projetoathena.azurewebsites.net/
 
 <h3>Video Demo</h3>
-https://www.youtube.com/watch?v=AOWFAFRiwIQ&feature=youtu.be&ab_channel=GuilhermeSilvaMartins
+https://youtu.be/Vhzchf8ZfqU
+<img src="https://i.ibb.co/gdq7Bmd/2.gif" alt="2" border="0">
+
 
 <h3>Apresentação</h3>
 https://www.canva.com/design/DAE0_9jAz3k/a8EyOwssR2-TDjyvXBSw6g/view
 
 <h2>Modelagem de Dados</h2>
 
+<h2>Atual</h2>
+<h3>Modelo Conceitual</h3>
+<img src="Modelagem de dados/modeloConceitual1.PNG"/>
+
+<h3>Modelo Lógico</h3>
+<img src="Modelagem de dados/modeloLogico1.PNG"/>
+
+<h2>Próximos passos</h2>
 <h3>Modelo Conceitual</h3>
 <img src="Modelagem de dados/modeloConceitual2.PNG"/>
 
