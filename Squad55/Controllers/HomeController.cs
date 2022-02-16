@@ -26,6 +26,20 @@ namespace Squad55.Controllers
             return View();
         }
 
+        public ActionResult CursoMarketingDigital()
+        {
+
+
+            return View();
+        }
+
+        public ActionResult CursoLogicaProgramcao()
+        {
+
+
+            return View();
+        }
+
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
