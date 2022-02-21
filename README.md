@@ -36,7 +36,7 @@ Nós habilitamos nossas alunas a superarem os maiores desafios da era digital, a
 <h2>Links</h2>
 
 <h3>Site</h3>
-http://projetoathena.tk/
+https://projetoathena.azurewebsites.net/
 <!-- https://projetoathena.azurewebsites.net/ -->
 
 <h3>Video Demo</h3>
