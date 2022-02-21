@@ -41,7 +41,7 @@ https://projetoathena.azurewebsites.net/
 
 <h3>Video Demo</h3>
 https://youtu.be/Vhzchf8ZfqU
-<img src="https://i.ibb.co/gdq7Bmd/2.gif" alt="2" border="0">
+<img src="Gif/videoDemo.gif" alt="2" border="0">
 
 
 <h3>Apresentação</h3>
